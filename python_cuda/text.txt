@@ -1,0 +1,2 @@
+which python
+find -name "extension.h"

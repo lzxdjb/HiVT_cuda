@@ -1,0 +1,23 @@
+ int num1 = edge_index_1[i];
+            int num2 = edge_index_0[i];
+            int judge  = 0 ; 
+
+            for(int k = 0 ;; k ++)
+            {
+                if(num1 == edge_index_0[k])
+                {
+                    for(int p = 0 ;; p++)
+                    {
+                        if(num2 == edge_index_1[p + k])
+                        {
+                            debug(alpha_temp, test_output + (p+k) * 8, 8);
+                            judge = 1;
+                            break;
+                        }
+                    }
+                }
+                if(judge == 1)
+                {
+                    break;
+                }
+            }
